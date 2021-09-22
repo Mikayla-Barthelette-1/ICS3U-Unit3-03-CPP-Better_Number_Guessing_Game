@@ -11,19 +11,15 @@
 int main() {
     // this function creates the game
 
-
     int numberGuessed;
-
     int someRandomNumber;
 
 
 
+
     std::random_device rseed;
-
     std::mt19937 rgen(rseed());  // mersenne_twister
-
     std::uniform_int_distribution<int> idist(0 , 9);  // [0 , 9]
-
     someRandomNumber = idist(rgen);
 
 
